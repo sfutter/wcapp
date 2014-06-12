@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  hteam: MyString
+  ateam: MyString
+  htscore: 1
+  atscore: 1
+
+two:
+  hteam: MyString
+  ateam: MyString
+  htscore: 1
+  atscore: 1

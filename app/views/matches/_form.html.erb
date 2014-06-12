@@ -1,0 +1,38 @@
+<%= form_for(@match) do |f| %>
+  <% if @match.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@match.errors.count, "error") %> prohibited this team from being saved:</h2>
+
+      <ul>
+      <% @match.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :hteam %><br>
+    <%= f.text_field :hteam %>
+  </div>
+    <div class="field">
+    <%= f.label :htscore %><br>
+    <%= f.text_field :htscore %>
+  </div>
+    <div class="field">
+    <%= f.label :ateam %><br>
+    <%= f.text_field :ateam %>
+  </div>
+    <div class="field">
+    <%= f.label :atscore %><br>
+    <%= f.text_field :atscore %>
+  </div>
+      <div class="field">
+    <%= f.label :mdate %><br>
+    <%= f.date_field :mdate %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
